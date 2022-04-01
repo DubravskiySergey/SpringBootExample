@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<title>Start Page</title>
+</head>
+<body>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+	<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+		<div class="container">
+			<a class="navbar-brand" href="/">MAU</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+		    </button>
+		
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+			        <li class="nav-item">
+			          <a class="nav-link active" aria-current="page" href="/login">Login</a>
+			        </li>
+			        <li class="nav-item">
+			          <a class="nav-link active" aria-current="page" href="/companyList">Company List</a>
+			        </li>
+			        <li class="nav-item">
+			          <a class="nav-link active" aria-current="page" href="/admin/registration">Registration</a>
+			        </li>
+	 	       </ul>
+	 	        <a class="nav-link active" aria-current="page" href="/logout">Logout</a>
+			</div>
+		</div>
+	</nav>
+
+	<main>
+		<div class="container">
+			<h1 class="display-1 my-4">Start Page</h1>
+		</div>
+
+		<div class="container">	  
+			<div class="row">
+				<div class="col-lg-8 pe-5">
+					<p class="fw-bold">Welcome to GSMRT EMEA Portal</p>
+					<p>Portal is entry point to a set of Web-Based applications which are supporting the provisioning GSMRT EMEA Reports.</p>
+					<p>Enter your IBM intranet ID and password, then click "Вход в систему" to sign in.</p>
+					
+					<p class="fw-bold">Please acknowledge following disclaimer and provide your IBM Intranet identity to log in, just in case you agree!</p>
+					<p>By accessing to this application, you authorize the MAU application to do the following: Process your Name and intranet ID along with the data you provide in this application. This personal information will be transferred and processed by IBM Services and is encrypted while in transit. MAU is designed for metric management. It is not a mandatory tool - each employee is free to decide whether they want to use it or not, and cannot be forced to use this tool. What you do with the information that you obtain from MAU is your responsibility; the information is only accurate to the extent of what employees choose to make available in the tool. MAU does not collect any personal information that is then shared with other users or applications without user express consent. Any information tied to you and stored in MAU databases will be deleted or de-identified once you leave IBM. The following data is either displayed, processed or stored by MAU app: First Name, Last Name, Email, Employee Serial Number and any input you could provide. You control which information you share with the tool you create or join. In case you believe your data is incorrect or needs to be removed from any MAU data stores, you find any inconsistencies that cannot be updated by you or in case you want to receive a copy of what data we are displaying, processing or storing about you, please notify:
+						GSMRTEM@fr.ibm.com</p>
+				</div>
+				<div class="col-lg-4">
+					<p>Please sign in using your Internet address as listed in Blue Pages.</p>
+					<p>The fields indicated with an asterisk (*) are required to complete this transaction; other fields are optional. If you do not want to provide us with the required information, please use the "Back" button on your browser to return to the previous page, or close the window or browser session that is displaying this page.</p>
+				</div>
+			</div>
+		</div>
+	</main>
+</body>
+</html>

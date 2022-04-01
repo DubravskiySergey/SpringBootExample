@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Error Page</title>
+</head>
+<body>
+	<h1>Error Page</h1>
+	
+	<div th:if="${@userDTO}">
+		<p th:utext="'Access denied! ' + 
+			(${@userDTO.surname != null and @userDTO.name != null} ? 
+				'User <b>' + ${@userDTO.surname} + ' ' + ${@userDTO.name} + '</b> (login: ' + ${@userDTO.login} + ')' :
+				'Login: <b>' + ${@userDTO.login}) +			
+			'</b> has role(s) ' + ${@userDTO.roles}"> </p>
+	</div>
+	<div th:unless="${@userDTO}">
+		<p>Access denied! user is not identified</p>
+	</div>
+	<a href="/">Go to Main Page</a>
+</body>
+</html>
